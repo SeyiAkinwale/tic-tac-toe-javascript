@@ -1,14 +1,16 @@
 const gameboard = document.querySelector('#gameboard')
-
 const infoDisplay = document.querySelector('#info')
-
-const startCells = [
+const startCells = 
+[
   "", "", "", "", "", "", "", "", "",
 ]
 
-function createBoard() {
-  startCells.forEach((cell:string, index:number) => {
-    const cellEleement document.createEleemnt('div')
-    cellEleement.classList.add('square')
-  })
+function createBoard() 
+{
+  startCells.forEach((cell, index) => 
+    {
+    const cellElement document.createElement('div')
+    cellElement.classList.add('square')
+    gameBoard.append(cellElement)
+    })
 }
