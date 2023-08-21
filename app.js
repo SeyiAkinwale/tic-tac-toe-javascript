@@ -7,10 +7,11 @@ const startCells =
 
 function createBoard() 
 {
-  startCells.forEach((cell, index) => 
+  startCells.forEach((_cell, index) => 
     {
     const cellElement = document.createElement('div')
     cellElement.classList.add('square')
+    cellElement.id = index
     gameboard.append(cellElement)
     })
 }
