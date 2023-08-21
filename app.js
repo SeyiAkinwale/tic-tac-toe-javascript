@@ -12,8 +12,14 @@ function createBoard()
     const cellElement = document.createElement('div')
     cellElement.classList.add('square')
     cellElement.id = index
+    cellElement.addEventListener('click', addGo)
     gameboard.append(cellElement)
     })
 }
 
 createBoard()
+
+function addGo(e)
+{
+  console.log(e.target)
+}
