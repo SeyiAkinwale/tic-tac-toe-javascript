@@ -14,3 +14,5 @@ function createBoard()
     gameBoard.append(cellElement)
     })
 }
+
+createBoard()
