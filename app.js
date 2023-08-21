@@ -11,7 +11,7 @@ function createBoard()
     {
     const cellElement = document.createElement('div')
     cellElement.classList.add('square')
-    gameBoard.append(cellElement)
+    gameboard.append(cellElement)
     })
 }
 
